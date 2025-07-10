@@ -1,0 +1,21 @@
+body { font-family: sans-serif; text-align: center; }
+.grid {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+.grid li {
+  width: 200px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  overflow: hidden;
+}
+.grid img { width: 100%; display: block; }
+.grid span {
+  display: block;
+  padding: 0.5rem;
+  background: #f8f8f8;
+}

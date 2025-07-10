@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Schelling Model Hub</title>
+  <!-- adjust this if your CSS lives elsewhere -->
+  <link rel="stylesheet" href="../assets/style.css">
+  <style>
+    /* Minimal styling if you don’t have a shared CSS */
+    body {
+      font-family: sans-serif;
+      text-align: center;
+      margin: 2rem;
+    }
+    .grid {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+    }
+    .grid li {
+      width: 180px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      overflow: hidden;
+      box-shadow: 1px 1px 4px rgba(0,0,0,0.1);
+      transition: transform 0.1s;
+    }
+    .grid li:hover {
+      transform: translateY(-3px);
+    }
+    .grid img {
+      width: 100%;
+      display: block;
+    }
+    .grid span {
+      display: block;
+      padding: 0.5rem;
+      background: #f9f9f9;
+    }
+    footer {
+      margin-top: 3rem;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>🔍 Schelling Model Hub</h1>
+    <p>Select one of the demos or analyses below:</p>
+  </header>
+
+  <main>
+    <ul class="grid">
+      <li>
+        <a href="schelling_heatmap_evolution.html">
+          <img src="thumbs/evolution.png" alt="Heatmap Evolution">
+          <span>Heatmap Evolution</span>
+        </a>
+      </li>
+      <li>
+        <a href="parameter_sweep.html">
+          <img src="thumbs/parameters.png" alt="Parameter Sweep">
+          <span>Parameter Sweep</span>
+        </a>
+      </li>
+      <li>
+        <a href="interactive_simulation.html">
+          <img src="thumbs/interactive.png" alt="Interactive Simulation">
+          <span>Interactive Simulation</span>
+        </a>
+      </li>
+      <!-- add more items as needed -->
+    </ul>
+  </main>
+
+  <footer>
+    <p>
+      ← <a href="../../../index.html">Back to Main Hub</a>
+    </p>
+  </footer>
+
+</body>
+</html>
